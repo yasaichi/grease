@@ -1,38 +1,47 @@
 # Grease
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/grease`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Gem Version](https://badge.fury.io/rb/grease.svg)](http://badge.fury.io/rb/grease)
+[![Build Status](https://travis-ci.org/yasaichi/grease.svg?branch=master)](https://travis-ci.org/yasaichi/grease)
+[![Code Climate](https://codeclimate.com/github/yasaichi/grease/badges/gpa.svg)](https://codeclimate.com/github/yasaichi/grease)
+[![Test Coverage](https://codeclimate.com/github/yasaichi/grease/badges/coverage.svg)](https://codeclimate.com/github/yasaichi/grease/coverage)
 
-TODO: Delete this and the text above, and describe your gem
+Grease provides an adapter to use Tilt as extension of Sprockets 4 or later.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'grease'
+gem "grease"
 ```
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install grease
+```
+$ gem install grease
+```
 
 ## Usage
 
 TODO: Write usage instructions here
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/grease.
+You should follow the steps below.
+
+1. [Fork the repository](https://help.github.com/articles/fork-a-repo/)
+2. Create a feature branch: `git checkout -b add-new-feature`
+3. Commit your changes: `git commit -am 'add new feature'`
+4. Push the branch: `git push origin add-new-feature`
+4. [Send us a pull request](https://help.github.com/articles/using-pull-requests/)
+
+
 
 
 ## License
