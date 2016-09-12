@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/yasaichi/grease/badges/gpa.svg)](https://codeclimate.com/github/yasaichi/grease)
 [![Test Coverage](https://codeclimate.com/github/yasaichi/grease/badges/coverage.svg)](https://codeclimate.com/github/yasaichi/grease/coverage)
 
-Grease provides an adapter to use Tilt as extension of Sprockets 4 or later.
+Grease provides an adapter to use Tilt as extension of Sprockets 3 or later.
 
 ## Installation
 
@@ -40,9 +40,6 @@ You should follow the steps below.
 3. Commit your changes: `git commit -am 'add new feature'`
 4. Push the branch: `git push origin add-new-feature`
 4. [Send us a pull request](https://help.github.com/articles/using-pull-requests/)
-
-
-
 
 ## License
 

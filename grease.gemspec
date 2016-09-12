@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["yasaichi"]
   spec.email         = ["yasaichi@users.noreply.github.com"]
 
-  spec.summary       = "Tilt adapter for Sprockets 4 or later"
-  spec.description   = "Grease provides an adapter to use Tilt as extension of Sprockets 4 or later."
+  spec.summary       = "Tilt adapter for Sprockets 3 or later"
+  spec.description   = "Grease provides an adapter to use Tilt as extension of Sprockets 3 or later."
   spec.homepage      = "https://github.com/yasaichi/grease"
   spec.license       = "MIT"
 
