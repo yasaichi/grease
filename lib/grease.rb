@@ -1,5 +1,8 @@
+require "grease/adapter"
 require "grease/version"
 
 module Grease
-  # Your code goes here...
+  def self.apply(engine)
+    Grease::Adapter.new(engine)
+  end
 end
