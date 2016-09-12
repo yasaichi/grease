@@ -1,2 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'grease'
+
+require "grease"
+require "sprockets"
+require "tilt"

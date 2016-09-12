@@ -1,3 +1,4 @@
+require "grease/adapter"
 require "grease/version"
 
 module Grease
