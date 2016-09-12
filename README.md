@@ -17,19 +17,26 @@ gem "grease"
 
 And then execute:
 
-```
+```shell
 $ bundle
 ```
 
 Or install it yourself as:
 
-```
+```shell
 $ gem install grease
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+If you'd like to convert Haml with Sprockets, add code like this:
+
+```ruby
+register_mime_type "text/haml", extensions: %w(.haml)
+register_transformer "text/haml", "text/html", Grease.apply(Tilt::HamlTemplate)
+```
+
+It works because `Grease.apply` returns a "callable" object.
 
 ## Contributing
 
