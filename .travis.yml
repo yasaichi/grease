@@ -6,3 +6,6 @@ rvm:
 gemfile:
   - gemfiles/sprockets3.gemfile
   - gemfiles/sprockets4.gemfile
+branches:
+  only:
+    - master
