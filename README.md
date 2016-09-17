@@ -32,6 +32,10 @@ $ gem install grease
 If you'd like to convert Haml with Sprockets, add code like this:
 
 ```ruby
+# Sprockets 3
+register_engine ".haml", Grease.apply(Tilt::HamlTemplate), mime_type: "text/html", silence_deprecation: true
+
+# Sprockets 4+
 register_mime_type "text/haml", extensions: %w(.haml)
 register_transformer "text/haml", "text/html", Grease.apply(Tilt::HamlTemplate)
 ```
