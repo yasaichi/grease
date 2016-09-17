@@ -1,0 +1,10 @@
+inherit_from:
+  - https://raw.githubusercontent.com/rails/rails/master/.rubocop.yml
+
+AllCops:
+  Exclude:
+    - spec/dummy/**/*
+
+# Maximum line length
+LineLength:
+  Max: 100
