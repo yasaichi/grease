@@ -72,4 +72,12 @@ gemfiles/*.lock
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
 
+# RuboCop cache
+.rubocop-http*
+
+# Dummy Rails app
+/spec/dummy/db/
+/spec/dummy/log/
+/spec/dummy/tmp/
+
 
