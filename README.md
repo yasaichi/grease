@@ -29,7 +29,7 @@ $ gem install grease
 
 ## Usage
 
-If you'd like to convert Haml with Sprockets, add code like this:
+If you'd like to use `Tilt::HamlTemplate` in Sprockets, add code like this:
 
 ```ruby
 # Sprockets 3
