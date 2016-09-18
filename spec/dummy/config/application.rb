@@ -25,13 +25,13 @@ module Dummy
       if major_version == 3
         env.register_engine ".haml", Grease.apply(Tilt::HamlTemplate), mime_type: "text/html", silence_deprecation: true
       elsif major_version >= 4
-        env.register_mime_type "text/haml", extensions: %w(.haml)
+        env.register_mime_type "text/haml", extensions: %w(.haml .html.haml)
         env.register_transformer "text/haml", "text/html", Grease.apply(Tilt::HamlTemplate)
       end
     end
 
     # NOTE: Enable us to get the template path by ActionController::Base.helpers.asset_path
-    config.assets.precompile << "foo.html"
+    config.assets.precompile += %w(foo.html bar.html)
   end
 end
 

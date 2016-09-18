@@ -78,6 +78,5 @@ gemfiles/*.lock
 # Dummy Rails app
 /spec/dummy/db/
 /spec/dummy/log/
-/spec/dummy/tmp/
 
 
