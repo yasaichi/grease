@@ -9,8 +9,8 @@ module Grease
       template = @template_class.new { input[:data] }
 
       # TODO: Hack for converting ActiveSupport::SafeBuffer into String
-      output = "#{template.render(context, {})}"
-      context.metadata.merge(data: output)
+      data = template.render(context, {}).to_str
+      context.metadata.merge(data: data)
     end
   end
 end
