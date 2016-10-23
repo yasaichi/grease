@@ -12,5 +12,9 @@ module Grease
       data = template.render(context, {}).to_str
       context.metadata.merge(data: data)
     end
+
+    def inspect
+      "#<#{self.class.name}(#{@template_class.name}):#{format('%#016x', object_id << 1)}>"
+    end
   end
 end
