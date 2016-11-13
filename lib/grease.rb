@@ -2,7 +2,7 @@ require "grease/adapter"
 require "grease/version"
 
 module Grease
-  def self.apply(engine)
-    Grease::Adapter.new(engine)
+  def self.apply(template_class)
+    Grease::Adapter.new(template_class)
   end
 end
