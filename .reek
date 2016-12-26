@@ -1,0 +1,11 @@
+# Excluding directories
+exclude_paths:
+  - spec/dummy
+
+# Generic smell configuration
+Attribute:
+  enabled: false
+IrresponsibleModule:
+  enabled: false
+TooManyStatements:
+  max_statements: 10

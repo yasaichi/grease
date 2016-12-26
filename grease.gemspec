@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "haml"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rails", ">= 4.2"
+  spec.add_development_dependency "reek"
   spec.add_development_dependency "rubocop"
   spec.add_development_dependency "rspec-rails", "~> 3.0"
   spec.add_development_dependency "simplecov"
