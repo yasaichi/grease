@@ -20,14 +20,8 @@ module Dummy
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.assets.configure do |env|
-      major_version = Sprockets::VERSION.split(".").first.to_i
-
-      if major_version == 3
-        env.register_engine ".haml", Grease.apply(Tilt::HamlTemplate), mime_type: "text/html", silence_deprecation: true
-      elsif major_version >= 4
-        env.register_mime_type "text/haml", extensions: %w(.haml .html.haml)
-        env.register_transformer "text/haml", "text/html", Grease.apply(Tilt::HamlTemplate)
-      end
+      env.register_mime_type "text/haml", extensions: %w(.haml .html.haml)
+      env.register_transformer "text/haml", "text/html", Grease.apply(Tilt::HamlTemplate)
     end
 
     # NOTE: Enable us to get the template path by ActionController::Base.helpers.asset_path
