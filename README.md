@@ -29,11 +29,11 @@ $ gem install grease
 
 ## Usage
 
-If you'd like to use `Tilt::HamlTemplate` in Sprockets, add code like this:
+When you'd like to use `Tilt::HamlTemplate` in Sprockets, add code like this:
 
 ```ruby
 register_mime_type "text/haml", extensions: %w(.haml .html.haml)
-register_transformer "text/haml", "text/html", Grease.apply(Tilt::HamlTemplate)
+register_transformer "text/haml", Tilt::HamlTemplate.default_mime_type, Grease.apply(Tilt::HamlTemplate)
 ```
 
 It works because `Grease.apply` returns a "callable" object.
