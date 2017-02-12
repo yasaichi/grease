@@ -19,9 +19,16 @@ module Dummy
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
     config.assets.configure do |env|
-      env.register_mime_type "text/haml", extensions: %w(.haml .html.haml)
-      env.register_transformer "text/haml", "text/html", Grease.apply(Tilt::HamlTemplate)
+      major_version = Gem::Version.create(Sprockets::VERSION).segments.first
+
+      if major_version == 3
+        env.register_engine ".haml", Grease.apply(Tilt::HamlTemplate), mime_type: Tilt::HamlTemplate.default_mime_type, silence_deprecation: true
+      elsif major_version >= 4
+        env.register_mime_type "text/haml", extensions: %w(.haml .html.haml)
+        env.register_transformer "text/haml", Tilt::HamlTemplate.default_mime_type, Grease.apply(Tilt::HamlTemplate)
+      end
     end
 
     # NOTE: Enable us to get the template path by ActionController::Base.helpers.asset_path
