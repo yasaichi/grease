@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/yasaichi/grease/badges/gpa.svg)](https://codeclimate.com/github/yasaichi/grease)
 [![Test Coverage](https://codeclimate.com/github/yasaichi/grease/badges/coverage.svg)](https://codeclimate.com/github/yasaichi/grease/coverage)
 
-Grease provides an adapter to use Tilt as extension of Sprockets 3 or later.
+Grease provides an adapter to use [Tilt](https://github.com/rtomayko/tilt) as extension of Sprockets 3 or later.
 
 ## Installation
 
