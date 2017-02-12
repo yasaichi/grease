@@ -8,9 +8,8 @@ module Grease
       context = input[:environment].context_class.new(input)
       template = @template_class.new { input[:data] }
 
-      # TODO: Hack for converting ActiveSupport::SafeBuffer into String
-      data = template.render(context, {}).to_str
-      context.metadata.merge(data: data)
+      # NOTE: Call #to_str to convert ActiveSupport::SafeBuffer into String
+      context.metadata.merge(data: template.render(context).to_str)
     end
 
     def inspect
