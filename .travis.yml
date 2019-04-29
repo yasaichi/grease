@@ -16,3 +16,7 @@ before_install:
   - gem update --system 2.7.9 --no-doc
 after_script:
   - '[ ${TRAVIS_EVENT_TYPE} != "pull_request" ] && [ ${TRAVIS_BRANCH} = "master" ] && bundle exec codeclimate-test-reporter'
+notifications:
+  email: false
+  slack:
+    secure: "kr5NAIJB8aOzyNEd8Oc0u9jEzPuPnEmu31PnbEBPOSHDoF1PFrFPFVkPEyvNjSIO6LkuLGsRq368mTUmazPgP65V25matp0YQ6Noc3wOTQ0U2qdLfYLionBJ1figRLlWC4HQhHC6vQ4sGFWOFIvkz65e1boR2SO8CVq/f89pVDnh10fv7z4yTuEzN60wdtdN+kjeoMwuFYNj6IWSaVlvHGDlZMIhYpu1dEC3vcTN0rV2rRsgQbsNk7Ajg3K9kOZ6jtPWt68V1F9mNJZUYyc7arKmcOHfuBWtMIaguxdkONsJQfd0WY+gbq1Ywnex0KN2KEsENPJbxbtzEovul0843o/2HTMuunB7fhnP+NZyKX3FfyEO70U/NTag9i03GzU7sD9XE1UgqpC38KueEKCXc+fSw9qs5qcFw2DDJc2mwyedUB2UcJTBT8gfrChw/OEthuppAnqWh3z3joq1tm5PjizoLqh2Y9IYDPPHezHl5ak0uddJaz1CGIwNY5DSoa6dSQEnp6sK5uN9fH7Cdvdz8tTQlqRbgq4POQRO4yuGsEMunhaTT9BV08shkdiW1lzEv8ZgFHz0qfWxoN3mWo4eyjaK06y2Sf+9QHLuGIzKxcNdDzgDjBLaafdMbAn+jmOJmY5dUn5E5I5wKc/B4cRpjuWotK5fyU2Pxihwa41Q37c="
